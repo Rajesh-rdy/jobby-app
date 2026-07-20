@@ -19,46 +19,46 @@ const JobItem = props => {
   } = jobDetails
 
   return (
-    <li className="job-item">
-      <Link to={`/jobs/${id}`} className="job-link">
-        <div className="logo-title-container">
+    <li className='job-item'>
+      <Link to={`/jobs/${id}`} className='job-link'>
+        <div className='logo-title-container'>
           <img
             src={companyLogoUrl}
-            alt="company logo"
-            className="company-logo"
+            alt='company logo'
+            className='company-logo'
           />
 
-          <div className="title-rating-container">
-            <h1 className="job-title">{title}</h1>
+          <div className='title-rating-container'>
+            <h1 className='job-title'>{title}</h1>
 
-            <div className="rating-container">
-              <BsStarFill className="star-icon" />
-              <p className="rating">{rating}</p>
+            <div className='rating-container'>
+              <BsStarFill className='star-icon' />
+              <p className='rating'>{rating}</p>
             </div>
           </div>
         </div>
 
-        <div className="location-package-container">
-          <div className="location-employment-container">
-            <div className="icon-text-container">
-              <MdLocationOn className="icon" />
-              <p className="details">{location}</p>
+        <div className='location-package-container'>
+          <div className='location-employment-container'>
+            <div className='icon-text-container'>
+              <MdLocationOn className='icon' />
+              <p className='details'>{location}</p>
             </div>
 
-            <div className="icon-text-container">
-              <BsBriefcaseFill className="icon" />
-              <p className="details">{employmentType}</p>
+            <div className='icon-text-container'>
+              <BsBriefcaseFill className='icon' />
+              <p className='details'>{employmentType}</p>
             </div>
           </div>
 
-          <p className="package">{packagePerAnnum}</p>
+          <p className='package'>{packagePerAnnum}</p>
         </div>
 
-        <hr className="line" />
+        <hr className='line' />
 
-        <h1 className="description-heading">Description</h1>
+        <h1 className='description-heading'>Description</h1>
 
-        <p className="description">{jobDescription}</p>
+        <p className='description'>{jobDescription}</p>
       </Link>
     </li>
   )
